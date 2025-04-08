@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Desa Ciasmara</title>
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .news-card {
+        transition: transform 0.3s;
+        margin: 10px;
+        height: 100%;
+      }
+      .news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .news-img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .section-title {
+        border-bottom: 3px solid #0d6efd;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 20px;
+      }
+      .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+      }
+      .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #0d6efd;
+        border: none;
+        margin: 0 5px;
+      }
+      .carousel-indicators .active {
+        background-color: #0a58ca;
+      }
+      .carousel-container {
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-dashboard-square-1"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="#">Dashboard</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-home-2"></i>
+              <span>Berita</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-user-4"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-agenda"></i>
+              <span>Surat Pegajuan</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-box-archive-1"></i>
+              <span>Riwayat Pengajuan</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-user-multiple-4"></i>
+              <span>Anggota Keluarga</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-message-2-question"></i>
+              <span>FAQ</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main p-3">
+        <div class="container-fluid">
+          <h2 class="section-title">Berita Terkini Desa Ciasmara</h2>
+
+          <!-- Carousel untuk Berita -->
+          <div class="carousel-container">
+            <div
+              id="newsCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Musrenbang"
+                          class="card-img-top news-img"
+                          alt="Musrenbang Desa"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Musrenbang Desa Ciasmara Tahun 2024
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 15 Maret 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Desa Ciasmara menyelenggarakan Musyawarah
+                            Perencanaan Pembangunan (Musrenbang) untuk membahas
+                            program dan anggaran tahun 2024.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Panen+Raya"
+                          class="card-img-top news-img"
+                          alt="Panen Raya"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Panen Raya Padi Capai 7 Ton/Ha
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 5 Maret 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Petani Desa Ciasmara bersyukur atas hasil panen yang
+                            melimpah tahun ini dengan rata-rata 7 ton per
+                            hektar.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Posyandu"
+                          class="card-img-top news-img"
+                          alt="Posyandu"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Posyandu Raih Penghargaan</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 28 Februari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Posyandu Melati Desa Ciasmara meraih penghargaan
+                            sebagai Posyandu Terbaik se-Kabupaten Bogor.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Jalan+Desa"
+                          class="card-img-top news-img"
+                          alt="Pembangunan Jalan"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Pembangunan Jalan Desa Tahap II
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 20 Februari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Pemerintah Desa memulai pembangunan jalan desa tahap
+                            II sepanjang 1.5 km yang menghubungkan Dusun
+                            Ciasmara dengan Dusun Pasir Muncang.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=UMKM"
+                          class="card-img-top news-img"
+                          alt="Pelatihan UMKM"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Pelatihan UMKM Sukses Digelar
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 10 Februari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            50 pelaku UMKM Desa Ciasmara mengikuti pelatihan
+                            pengembangan produk dan pemasaran digital.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Kerja+Bakti"
+                          class="card-img-top news-img"
+                          alt="Kerja Bakti"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Kerja Bakti Bersih Desa</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 1 Februari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Warga Desa Ciasmara bergotong royong membersihkan
+                            lingkungan menyambut bulan suci Ramadan.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Vaksinasi"
+                          class="card-img-top news-img"
+                          alt="Vaksinasi"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Vaksinasi Booster untuk Lansia
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 25 Januari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Pelaksanaan vaksinasi booster untuk lansia di Balai
+                            Desa Ciasmara diikuti oleh 120 warga.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Bansos"
+                          class="card-img-top news-img"
+                          alt="Bantuan Sosial"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Pendaftaran Bantuan Sosial</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 15 Januari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Pendaftaran bantuan sosial untuk warga kurang mampu
+                            dibuka hingga 30 Maret 2024.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=PKK"
+                          class="card-img-top news-img"
+                          alt="Kegiatan PKK"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Pelatihan Keterampilan PKK</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 5 Januari 2024</small>
+                          </p>
+                          <p class="card-text">
+                            Kelompok PKK Desa Ciasmara mengadakan pelatihan
+                            pembuatan kerajinan tangan dari bahan daur ulang.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Perpustakaan"
+                          class="card-img-top news-img"
+                          alt="Perpustakaan Desa"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Perpustakaan Desa Diresmikan
+                          </h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 20 Desember 2023</small>
+                          </p>
+                          <p class="card-text">
+                            Perpustakaan Desa Ciasmara resmi dibuka dengan
+                            koleksi lebih dari 1.000 buku untuk warga.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Poskamling"
+                          class="card-img-top news-img"
+                          alt="Pos Kamling"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Revitalisasi Pos Kamling</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 10 Desember 2023</small>
+                          </p>
+                          <p class="card-text">
+                            5 pos kamling di Desa Ciasmara direvitalisasi untuk
+                            meningkatkan keamanan lingkungan.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card news-card">
+                        <img
+                          src="https://via.placeholder.com/300x200?text=Senam"
+                          class="card-img-top news-img"
+                          alt="Senam Sehat"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Senam Sehat Rutin Mingguan</h5>
+                          <p class="card-text text-muted">
+                            <small>Diposting: 1 Desember 2023</small>
+                          </p>
+                          <p class="card-text">
+                            Kegiatan senam sehat setiap Minggu pagi di lapangan
+                            desa diikuti puluhan warga.
+                          </p>
+                          <a href="#" class="btn btn-primary btn-sm"
+                            >Baca Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Indikator dipindahkan ke bawah carousel -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#newsCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Pengumuman -->
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header bg-primary text-white">
+                  <h5 class="mb-0">Pengumuman Penting</h5>
+                </div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <strong>18 Maret 2024:</strong> Akan dilaksanakan kerja
+                      bakti bersih desa menyambut bulan suci Ramadan
+                    </li>
+                    <li class="list-group-item">
+                      <strong>25 Maret 2024:</strong> Pendaftaran bantuan sosial
+                      untuk warga kurang mampu dibuka hingga 30 Maret
+                    </li>
+                    <li class="list-group-item">
+                      <strong>1 April 2024:</strong> Pelaksanaan vaksinasi
+                      booster untuk lansia di Balai Desa
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/068c8a2cb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
