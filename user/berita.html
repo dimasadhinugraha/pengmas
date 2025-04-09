@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar With Bootstrap</title>
+    <!-- <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+      -->
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-dashboard-square-1"></i>
+          </button>
+          <div class="sidebar-logo">
+            <a href="#">Dashboard</a>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-home-2"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-user-4"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-agenda"></i>
+              <span>Surat Pegajuan</span>
+            </a>
+          </li>
+          <!-- <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <i class="lni lni-protection"></i>
+              <span>Auth</span>
+            </a>
+            <ul
+              id="auth"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Login</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Register</a>
+              </li>
+            </ul>
+          </li> -->
+          <!-- <li class="sidebar-item">
+            <a
+              href="#"
+              class="sidebar-link collapsed has-dropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#multi"
+              aria-expanded="false"
+              aria-controls="multi"
+            >
+              <i class="lni lni-layout"></i>
+              <span>Multi Level</span>
+            </a>
+            <ul
+              id="multi"
+              class="sidebar-dropdown list-unstyled collapse"
+              data-bs-parent="#sidebar"
+            >
+              <li class="sidebar-item">
+                <a
+                  href="#"
+                  class="sidebar-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#multi-two"
+                  aria-expanded="false"
+                  aria-controls="multi-two"
+                >
+                  Two Links
+                </a>
+                <ul
+                  id="multi-two"
+                  class="sidebar-dropdown list-unstyled collapse"
+                >
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Link 1</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Link 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li> -->
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-box-archive-1"></i>
+              <span>Riwayat Pengajuan</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-user-multiple-4"></i>
+              <span>Anggota Keluarga</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-message-2-question"></i>
+              <span>FAQ</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main p-3">
+        <div class="container">
+          <!-- 🔹 CAROUSEL BERITA LEBAR PENUH -->
+          <div
+            id="newsCarousel"
+            class="carousel slide mb-4"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="berita1.html">
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="d-block w-100"
+                    alt="Berita 1"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    <a
+                      href="berita1.html"
+                      class="text-white text-decoration-none"
+                      >Berita Utama 1</a
+                    >
+                  </h5>
+                  <p>Deskripsi singkat berita utama pertama.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="berita2.html">
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="d-block w-100"
+                    alt="Berita 2"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    <a
+                      href="berita2.html"
+                      class="text-white text-decoration-none"
+                      >Berita Utama 2</a
+                    >
+                  </h5>
+                  <p>Deskripsi singkat berita utama kedua.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="berita3.html">
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="d-block w-100"
+                    alt="Berita 3"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>
+                    <a
+                      href="berita3.html"
+                      class="text-white text-decoration-none"
+                      >Berita Utama 3</a
+                    >
+                  </h5>
+                  <p>Deskripsi singkat berita utama ketiga.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#newsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#newsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+
+          <!-- 🔹 KONTEN BERITA DENGAN SIDEBAR -->
+          <div class="row">
+            <!-- 🔸 BERITA UTAMA -->
+            <div class="col-md-8">
+              <h2>Berita Terbaru</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-3">
+                    <img
+                      src="images/desaciasmara.jpg"
+                      class="card-img-top"
+                      alt="Berita 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 1</h5>
+                      <p class="card-text">Ringkasan berita 1.</p>
+                      <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-3">
+                    <img
+                      src="images/desaciasmara.jpg"
+                      class="card-img-top"
+                      alt="Berita 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Judul Berita 2</h5>
+                      <p class="card-text">Ringkasan berita 2.</p>
+                      <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h2>Berita Populer</h2>
+              <div class="list-group">
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action d-flex align-items-center"
+                >
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="img-thumbnail me-3"
+                    alt="Berita Populer 1"
+                  />
+                  <div>
+                    <h6>Berita Populer 1</h6>
+                    <small>Deskripsi singkat berita populer.</small>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action d-flex align-items-center"
+                >
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="img-thumbnail me-3"
+                    alt="Berita Populer 2"
+                  />
+                  <div>
+                    <h6>Berita Populer 2</h6>
+                    <small>Deskripsi singkat berita populer lainnya.</small>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="list-group-item list-group-item-action d-flex align-items-center"
+                >
+                  <img
+                    src="images/desaciasmara.jpg"
+                    class="img-thumbnail me-3"
+                    alt="Berita Populer 3"
+                  />
+                  <div>
+                    <h6>Berita Populer 3</h6>
+                    <small>Deskripsi singkat berita menarik.</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
