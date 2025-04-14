@@ -24,24 +24,24 @@
             <i class="lni lni-dashboard-square-1"></i>
           </button>
           <div class="sidebar-logo">
-            <a href="berita.html">Dashboard</a>
+            <a href="#">Dashboard</a>
           </div>
         </div>
         <ul class="sidebar-nav">
           <li class="sidebar-item">
-            <a href="berita.html" class="sidebar-link">
+            <a href="#" class="sidebar-link">
               <i class="lni lni-home-2"></i>
               <span>Berita</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="profile.html" class="sidebar-link">
+            <a href="#" class="sidebar-link">
               <i class="lni lni-user-4"></i>
               <span>Profile</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="pengajuansurat.html" class="sidebar-link">
+            <a href="#" class="sidebar-link">
               <i class="lni lni-agenda"></i>
               <span>Surat Pegajuan</span>
             </a>
@@ -114,13 +114,19 @@
             </ul>
           </li> -->
           <li class="sidebar-item">
-            <a href="riwayatsurat.html" class="sidebar-link">
+            <a href="#" class="sidebar-link">
               <i class="lni lni-box-archive-1"></i>
               <span>Riwayat Pengajuan</span>
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="faq.html" class="sidebar-link">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-user-multiple-4"></i>
+              <span>Anggota Keluarga</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
               <i class="lni lni-message-2-question"></i>
               <span>FAQ</span>
             </a>
@@ -134,8 +140,80 @@
         </ul>
       </aside>
       <div class="main p-3">
-        <div class="text-center">
-          <h1>Sidebar Bootstrap 5</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="text-center">
+                <h1>Frequently Asked Questions</h1>
+                <p>Here are some of the most common questions we get asked.</p>
+              </div>
+            </div>
+          </div>
+        <div class="card" style="border: 0,2px solid;">
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pengajuan Surat
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="alert alert-info" role="alert">
+                        <p>1. Masuk ke menu <i><b>Pengajuan Surat</b></i></p>
+                        <p>2. Pilih jenis surat yang ingin diajukan</p>
+                        <p>3. Isi data yang diperlukan</p>
+                        <p>4. Klik tombol Ajukan</p>
+                        <p>5. Surat akan diajukan dan menunggu verifikasi</p>
+                        <p>6. Jika surat disetujui, akan ada notifikasi di menu Riwayat Surat</p>
+                        <p>7. Jika surat ditolak, akan ada notifikasi di menu Riwayat Surat</p>
+                        <p>8. Jika surat sudah disetujui, klik tombol Print untuk mendownload surat</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Penambahan Anggota Keluarga
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="alert alert-warning" role="alert">
+                        <p>1. Masuk ke menu Profile</p>
+                        <p>2. Pilih Anggota Keluarga</p>
+                        <p>3. Klik tombol Tambah Anggota Keluarga</p>
+                        <p>4. Isi data anggota keluarga</p>
+                        <p>5. Klik tombol Simpan</p>
+                        <p>6. Anggota keluarga berhasil ditambahkan</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Riwayat Surat
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="alert alert-success" role="alert">
+                        <p>1. Masuk ke menu Riwayat Surat</p>
+                        <p>2. Pilih surat yang ingin dilihat</p>
+                        <p>3. Klik tombol Lihat</p>
+                        <p>4. Surat akan ditampilkan</p>
+                        <p>5. Jika ingin mendownload, klik tombol Print</p>
+                        <p>6. Surat akan terdownload dalam format PDF</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          
         </div>
       </div>
     </div>
